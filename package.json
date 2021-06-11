@@ -11,9 +11,13 @@
   ],
   "author": "Gaspard Lonchampt",
   "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "bulma": "^0.9.2",
     "node-sass": "^6.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gaspard-lonchampt/Flooz-Landing-Page-V1.git"
   }
 }
