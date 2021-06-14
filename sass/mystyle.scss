@@ -46,6 +46,8 @@ $button-hover-color: $white;
 $button-border-color: none;
 $button-hover-border-color: none;
 
+$card-radius: 1rem;
+
 // Changer les variables des composants
 $body-background-color: $white;
 
@@ -93,10 +95,12 @@ i {
   justify-content: center;
 
   .subtitle {
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
   }
   .subtitle i {
     color: #ffdf00 !important;
+    font-size: 2rem;
+    line-height: 1.125;
   }
 }
 
@@ -166,6 +170,22 @@ i {
   }
 }
 
+// animation navbar
+
+.is-transparent {
+  animation: fade-in 1s;
+  background: rgba(255, 255, 255, 0.381) !important;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 // custom scss fin
 
 // Import uniquement des modules utilisés
@@ -183,3 +203,4 @@ i {
 @import "../node_modules/bulma/sass/helpers/typography.sass";
 @import "../node_modules/bulma/sass/grid/_all.sass";
 @import "../node_modules/bulma/sass/helpers/visibility.sass";
+@import "../node_modules/bulma/sass/components/card.sass";
